@@ -1,0 +1,7 @@
+-- Run At 20:21:12 10092024 --
+Computer Name: DESKTOP-V84SK26
+Processor Type: AMD x86-64
+Processor: AMD64
+Available Mem: 7929032
+Total Mem: 4311140
+Available Drives: CDEZ
