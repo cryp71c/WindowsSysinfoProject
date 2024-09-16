@@ -1,3 +1,4 @@
+#define _WIN32_WINNT 0x0600 
 #include <windows.h>
 #include <Sysinfoapi.h>
 #include <stdio.h>
@@ -102,6 +103,8 @@ int main(){
 	char *available_drives;
 	available_drives = getAvailableDrives(drive_bitmask);
 	
+	ULONGLONG memTotal=0;
+	GetPhysicallyInstalledSystemMemory(&memTotal);
 	
 	// Get installed memory
 	MEMORYSTATUSEX  system_ram;
@@ -117,7 +120,7 @@ int main(){
 	sysInfo << "Computer Name: " << computerName << "\n";
 	sysInfo << "Processor Type: " << pType << "\n";
 	sysInfo << "Processor: " << arch << "\n";
-	sysInfo << "Available Mem: " << system_ram.ullAvailPhys << "\n";
+	sysInfo << "Available Mem: " << memTotal << "\n";
 	sysInfo << "Total Mem: " << system_ram.ullTotalPhys << "\n"; // Get installed memory in KB and devide it by 24 into MB
 	sysInfo << "Available Drives: "<< available_drives << "\n";
 	
