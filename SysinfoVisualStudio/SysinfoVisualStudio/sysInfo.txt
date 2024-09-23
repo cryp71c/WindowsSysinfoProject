@@ -1,0 +1,7 @@
+-- Run At 20:26:12 15092024 --
+Computer Name: DESKTOP-75VIAV0
+Processor Type: AMD x86-64
+Processor: AMD64
+Available Mem: 12582912
+Total Mem: 0
+Available Drives: CD
